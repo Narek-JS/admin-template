@@ -1,15 +1,5 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "components/*": ["./src/components*"],
-      "constants/*": ["./src/constants*"],
-      "routes/*": ["./src/routes*"],
-      "layout/*": ["./src/layout*"],
-      "pages/*": ["./src/pages*"],
-      "store/*": ["./src/store*"],
-      "public/*": ["./public*"]
-    }
-  },
+  "compilerOptions": {},
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
