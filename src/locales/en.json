@@ -1,7 +1,37 @@
 {
   "common": {
-    "dashboard": "Dashboard"
+    "english": "English"
   },
-  "sidebar": {},
-  "login": {}
+  "signup": {
+    "title": "Just Two Step Away!",
+    "info": "Signing up as",
+    "nameLabel": "What should we call you?",
+    "namePlaceholder": "Your Name",
+    "passwordLabel": "Create a Secure Password",
+    "passwordPlaceholder": "Create password",
+    "passwordRulesInfo": "Passwords need to have at least 8 characters.",
+    "continue": "Continue",
+    "agreementPrefix": "By continue Sign Up, you are agreeing to Revenant",
+    "termsLinkText": "Terms of Service",
+    "agreementMiddle": "and are acknowledging our",
+    "privacyLinkText": "Privacy Notice applies"
+  },
+  "signin": {
+    "title": "Welcome, Backlog Captain",
+    "infoText-1": "Manage capital, track products, and drive growth.",
+    "infoText-2": "Make informed decisions and lead your business to success",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Password",
+    "login": "Log In",
+    "needHelp": "Need help signing in?",
+    "agreementPrefix": "By continue Sign Up, you are agreeing to Revenant",
+    "termsLinkText": "Terms of Service",
+    "agreementMiddle": "and are acknowledging our",
+    "privacyLinkText": "Privacy Notice applies"
+  },
+  "form": {
+    "field_is_required": "Field is required",
+    "string_max_length": "This field must be no more than {{maxLength}} characters long.",
+    "string_min_length": "Please enter at least {{minLength}} characters."
+  }
 }

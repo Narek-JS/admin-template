@@ -1,20 +1,24 @@
-import { DashboardLayout } from "../layout/DashboardLayout";
+import { DashboardLayout } from "layout/DashboardLayout";
 import { Routes, Route } from "react-router-dom";
+import { AuthLayout } from "layout/AuthLayout";
+import { ROUTES } from "constants/routes";
 import { lazy } from "react";
 
-const Dashboard = lazy(() => import("../pages/Dashboard"));
-const Products = lazy(() => import("../pages/Products"));
-const Login = lazy(() => import("../pages/Login"));
+const Dashboard = lazy(() => import("pages/Dashboard"));
+const SignUp = lazy(() => import("pages/SignUp"));
+const SignIn = lazy(() => import("pages/SignIn"));
 
 const AppRoutes = () => (
   <Routes>
     <Route element={<DashboardLayout />}>
       <Route index element={<Dashboard />} />
-      <Route path="products" element={<Products />} />
     </Route>
 
-    <Route path="login" element={<Login />} />
+    <Route element={<AuthLayout />}>
+      <Route path={ROUTES.SIGN_UP} element={<SignUp />} />
+      <Route path={ROUTES.SIGN_IN} element={<SignIn />} />
+    </Route>
   </Routes>
 );
 
-export { AppRoutes };
+export { AppRoutes as Routes };

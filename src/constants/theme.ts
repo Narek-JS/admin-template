@@ -10,6 +10,12 @@ const THEME_CONFIG: ThemeConfig = {
   },
   components: {
     Form: { verticalLabelPadding: "0px 0px 4px" },
+    Button: {
+      controlHeight: 38,
+    },
+    Input: {
+      controlHeight: 38,
+    },
   },
 };
 

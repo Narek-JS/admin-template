@@ -2,8 +2,8 @@ import { FORM_CONFIG } from "constants/formConfig";
 import { BrowserRouter } from "react-router-dom";
 import { THEME_CONFIG } from "constants/theme";
 import { createRoot } from "react-dom/client";
-import { AppRoutes } from "./routes/routes";
 import { ConfigProvider, App } from "antd";
+import { Routes } from "./routes/routes";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 import { StrictMode } from "react";
@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
       <App>
         <Provider store={store}>
           <BrowserRouter>
-            <AppRoutes />
+            <Routes />
           </BrowserRouter>
         </Provider>
       </App>
