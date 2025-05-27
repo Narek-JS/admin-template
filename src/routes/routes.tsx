@@ -5,13 +5,17 @@ import { ROUTES } from "constants/routes";
 import { lazy } from "react";
 
 const Dashboard = lazy(() => import("pages/Dashboard"));
-const SignUp = lazy(() => import("pages/SignUp"));
-const SignIn = lazy(() => import("pages/SignIn"));
+const Lessons = lazy(() => import("pages/Lessons"));
+
+// Auth
+const SignUp = lazy(() => import("pages/auth/SignUp"));
+const SignIn = lazy(() => import("pages/auth/SignIn"));
 
 const AppRoutes = () => (
   <Routes>
     <Route element={<DashboardLayout />}>
       <Route index element={<Dashboard />} />
+      <Route path={ROUTES.LESSONS} element={<Lessons />} />
     </Route>
 
     <Route element={<AuthLayout />}>

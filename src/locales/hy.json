@@ -33,5 +33,9 @@
     "field_is_required": "Այս դաշտը պարտադիր է։",
     "string_max_length": "Այս դաշտը չպետք է գերազանցի {{maxLength}} նիշ։",
     "string_min_length": "Խնդրում ենք մուտքագրել առնվազն {{minLength}} նիշ։"
+  },
+  "sidebar": {
+    "dashboard": "Daasdsadsadshboard",
+    "lessons": "Lesasdsadsadssons"
   }
 }

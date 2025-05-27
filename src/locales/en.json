@@ -33,5 +33,9 @@
     "field_is_required": "Field is required",
     "string_max_length": "This field must be no more than {{maxLength}} characters long.",
     "string_min_length": "Please enter at least {{minLength}} characters."
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "lessons": "Lessons"
   }
 }

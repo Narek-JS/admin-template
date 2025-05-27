@@ -9,6 +9,9 @@ const THEME_CONFIG: ThemeConfig = {
     fontFamily: "HelveticaNowDisplay",
   },
   components: {
+    Layout: {
+      siderBg: "#22252A",
+    },
     Form: { verticalLabelPadding: "0px 0px 4px" },
     Button: {
       controlHeight: 38,

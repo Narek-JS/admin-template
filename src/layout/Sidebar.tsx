@@ -1,28 +1,26 @@
-import { NavLink } from "react-router-dom";
+import { MENU_ITEMS } from "constants/MenuItems";
+import { useNavigate } from "react-router-dom";
+import { Layout, Menu } from "antd";
 
-const Sidebar: React.FC = () => (
-  <aside className="w-64 bg-gray-800 text-gray-100 min-h-screen">
-    <div className="px-4 py-5 text-lg font-semibold">LOGO</div>
-    <nav className="mt-2">
-      <ul>
-        <li>
-          <NavLink to="/" end className="block px-4 py-2 hover:bg-gray-700">
-            Dashboard
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/products" className="block px-4 py-2 hover:bg-gray-700">
-            Products
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/login" className="block px-4 py-2 hover:bg-gray-700">
-            Login
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
-  </aside>
-);
+const Sidebar: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleMenuNavigation = (key: string) => {
+    navigate(key);
+  };
+
+  return (
+    <Layout.Sider className="p-5" width={260} trigger={null} collapsible>
+      <div className="mx-2 mb-4 text-white">LOGO</div>
+      <Menu
+        onClick={(e) => handleMenuNavigation(e.key)}
+        selectedKeys={[location.pathname]}
+        items={MENU_ITEMS}
+        mode="inline"
+        theme="dark"
+      />
+    </Layout.Sider>
+  );
+};
 
 export { Sidebar };
