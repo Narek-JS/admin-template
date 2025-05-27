@@ -54,7 +54,7 @@ const SignIn: React.FC = () => {
 
         <Link
           to="/"
-          className="flex justify-center font-extrabold !text-[#00000099] text-lg"
+          className="flex justify-center font-extrabold !text-[#00000099] text-[17px] text-center"
         >
           {t("needHelp")}
         </Link>
