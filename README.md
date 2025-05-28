@@ -40,7 +40,7 @@ src/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/admin-template.git
+git clone https://github.com/Narek-JS/admin-template.git
 cd admin-template
 ```
 
@@ -88,6 +88,6 @@ MIT — feel free to use and modify for your own projects.
 
 ## 🙌 Author
 
-Built with ❤️ by [Narek Petrosyan](https://www.linkedin.com/in/narek-petrosyan-dev)  
-📫 Email: [narek.petrosyan.005@gmail.com](mailto:narek.petrosyan.005@gmail.com)  
+Built with ❤️ by [Narek Petrosyan](https://www.linkedin.com/in/narek-petrosyan-dev)
+📫 Email: [narek.petrosyan.005@gmail.com](mailto:narek.petrosyan.005@gmail.com)
 🌐 Portfolio: [narek.portfolo.am](http://narek.portfolo.am)
