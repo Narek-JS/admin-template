@@ -1,12 +1,5 @@
-import { AuthLanguageSwitcher } from "components/LanguageSwitcher";
-
 const Dashboard: React.FC = () => {
-  return (
-    <main>
-      dashboard
-      <AuthLanguageSwitcher />
-    </main>
-  );
+  return <main>dashboard</main>;
 };
 
 export default Dashboard;

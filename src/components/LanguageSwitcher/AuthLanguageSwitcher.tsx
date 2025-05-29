@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Button, Dropdown } from "antd";
 import type { MenuProps } from "antd";
 
-const languageMap: Record<string, string> = {
+const languages: Record<string, string> = {
   en: "English",
   hy: "Հայերեն",
 };
@@ -15,14 +15,14 @@ const AuthLanguageSwitcher: React.FC = () => {
     i18n.changeLanguage(e.key);
   };
 
-  const items: MenuProps["items"] = Object.entries(languageMap).map(
+  const items: MenuProps["items"] = Object.entries(languages).map(
     ([key, label]) => ({ key, label })
   );
 
   return (
     <Dropdown menu={{ items, onClick: handleMenuClick }} trigger={["click"]}>
       <Button className="!rounded-full" type="default">
-        {languageMap[i18n.resolvedLanguage!]} <GlobalOutlined />
+        {languages[i18n.resolvedLanguage!]} <GlobalOutlined />
       </Button>
     </Dropdown>
   );

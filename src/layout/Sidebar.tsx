@@ -1,8 +1,14 @@
 import { MENU_ITEMS } from "constants/MenuItems";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Layout, Menu } from "antd";
 
-const Sidebar: React.FC = () => {
+interface Props {
+  collapsed: boolean;
+}
+
+const Sidebar: React.FC<Props> = ({ collapsed }) => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const handleMenuNavigation = (key: string) => {
@@ -10,12 +16,18 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <Layout.Sider className="p-5" width={260} trigger={null} collapsible>
+    <Layout.Sider
+      collapsed={collapsed}
+      className="p-5"
+      trigger={null}
+      collapsible
+      width={260}
+    >
       <div className="mx-2 mb-4 text-white">LOGO</div>
       <Menu
+        items={MENU_ITEMS.map((item) => ({ ...item, label: t(item.label) }))}
         onClick={(e) => handleMenuNavigation(e.key)}
         selectedKeys={[location.pathname]}
-        items={MENU_ITEMS}
         mode="inline"
         theme="dark"
       />
