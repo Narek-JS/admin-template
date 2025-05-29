@@ -1,6 +1,6 @@
 import { AuthLanguageSwitcher } from "components/LanguageSwitcher";
-import { Spinner } from "../components/Spinner";
 import { Outlet } from "react-router-dom";
+import { Spinner } from "components/UI";
 import { Suspense } from "react";
 
 const AuthLayout: React.FC = () => {

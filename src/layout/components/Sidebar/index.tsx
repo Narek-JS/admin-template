@@ -1,7 +1,8 @@
 import { MENU_ITEMS } from "constants/MenuItems";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Layout, Menu } from "antd";
+import { UserCard } from "components/UserCard";
+import { Avatar, Layout, Menu } from "antd";
 
 interface Props {
   collapsed: boolean;
@@ -31,6 +32,14 @@ const Sidebar: React.FC<Props> = ({ collapsed }) => {
         mode="inline"
         theme="dark"
       />
+
+      <div className="mt-5">
+        {collapsed ? (
+          <Avatar src="https://i.pravatar.cc/100" size={38} />
+        ) : (
+          <UserCard />
+        )}
+      </div>
     </Layout.Sider>
   );
 };

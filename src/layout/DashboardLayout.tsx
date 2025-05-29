@@ -1,8 +1,7 @@
-import { Spinner } from "../components/Spinner";
+import { Header, Sidebar } from "./components";
 import { Suspense, useState } from "react";
 import { Outlet } from "react-router-dom";
-import { Sidebar } from "./Sidebar";
-import { Header } from "./Header";
+import { Spinner } from "components/UI";
 
 const DashboardLayout: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
