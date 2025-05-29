@@ -1,6 +1,7 @@
 {
   "common": {
-    "english": "English"
+    "english": "English",
+    "logout": "Logout"
   },
   "signup": {
     "title": "Just Two Step Away!",

@@ -4,7 +4,7 @@ import { COLORS } from "./colors";
 const THEME_CONFIG: ThemeConfig = {
   cssVar: true,
   token: {
-    fontFamily: "HelveticaNowDisplay",
+    fontFamily: "Helvetica Now Display",
     colorPrimary: COLORS.primary,
     borderRadius: 6,
   },

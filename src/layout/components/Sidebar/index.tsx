@@ -24,21 +24,28 @@ const Sidebar: React.FC<Props> = ({ collapsed }) => {
       collapsible
       width={260}
     >
-      <div className="mx-2 mb-4 text-white">LOGO</div>
-      <Menu
-        items={MENU_ITEMS.map((item) => ({ ...item, label: t(item.label) }))}
-        onClick={(e) => handleMenuNavigation(e.key)}
-        selectedKeys={[location.pathname]}
-        mode="inline"
-        theme="dark"
-      />
+      <div className="flex flex-col h-[calc(100vh-52px)]">
+        <div className="mx-2 mb-4 text-white ">LOGO</div>
 
-      <div className="mt-5">
-        {collapsed ? (
-          <Avatar src="https://i.pravatar.cc/100" size={38} />
-        ) : (
-          <UserCard />
-        )}
+        <div className="flex-auto overflow-auto">
+          <Menu
+            items={MENU_ITEMS.map((item) => ({
+              ...item,
+              label: t(item.label),
+            }))}
+            onClick={(e) => handleMenuNavigation(e.key)}
+            selectedKeys={[location.pathname]}
+            mode="inline"
+            theme="dark"
+          />
+        </div>
+        <div className="mt-5">
+          {collapsed ? (
+            <Avatar src="https://i.pravatar.cc/100" size={38} />
+          ) : (
+            <UserCard />
+          )}
+        </div>
       </div>
     </Layout.Sider>
   );
