@@ -4,6 +4,7 @@
     "logout": "Դուրս գալ",
     "addProduct": "Ավելացնել ապրանք"
   },
+
   "signup": {
     "title": "Մնում է միայն երկու քայլ։",
     "info": "Գրանցվում եք որպես",
@@ -36,6 +37,7 @@
     "string_max_length": "Այս դաշտը չպետք է գերազանցի {{maxLength}} նիշ։",
     "string_min_length": "Խնդրում ենք մուտքագրել առնվազն {{minLength}} նիշ։"
   },
+
   "sidebar": {
     "commission": "Հանձնաժողով",
     "dashboard": "Վահանակ",
@@ -43,6 +45,9 @@
     "lessons": "Դասեր"
   },
 
+  "dashboard": {
+    "title": "Վահանակ"
+  },
   "products": {
     "title": "Ապրանքներ",
     "newProduct": "Ավելացնել ապրանք"

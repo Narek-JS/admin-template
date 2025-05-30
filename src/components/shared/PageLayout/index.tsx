@@ -69,7 +69,13 @@ const PageLayout: React.FC<IPageLayout> = ({
     </div>
 
     {/* Main content */}
-    <Card className="rounded-2xl p-6">{children}</Card>
+    <Card
+      style={{ boxShadow: "1px 2px 44px rgba(143, 143, 143, 0.1)" }}
+      className="rounded-2xl p-6"
+      variant="borderless"
+    >
+      {children}
+    </Card>
   </div>
 );
 

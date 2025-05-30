@@ -4,6 +4,7 @@
     "logout": "Logout",
     "addProduct": "Add Product"
   },
+
   "signup": {
     "title": "Just Two Step Away!",
     "info": "Signing up as",
@@ -36,6 +37,7 @@
     "string_max_length": "This field must be no more than {{maxLength}} characters long.",
     "string_min_length": "Please enter at least {{minLength}} characters."
   },
+
   "sidebar": {
     "commission": "Commission",
     "dashboard": "Dashboard",
@@ -43,6 +45,9 @@
     "lessons": "Lessons"
   },
 
+  "dashboard": {
+    "title": "Dashboard"
+  },
   "products": {
     "title": "Products",
     "newProduct": "New Product"
