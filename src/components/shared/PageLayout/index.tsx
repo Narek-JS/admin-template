@@ -1,4 +1,4 @@
-import { Button, Typography } from "antd";
+import { Button, Card, Typography } from "antd";
 import type { ReactNode } from "react";
 
 interface IPageLayout {
@@ -69,7 +69,7 @@ const PageLayout: React.FC<IPageLayout> = ({
     </div>
 
     {/* Main content */}
-    <div className="flex-1 w-full">{children}</div>
+    <Card className="rounded-2xl p-6">{children}</Card>
   </div>
 );
 
