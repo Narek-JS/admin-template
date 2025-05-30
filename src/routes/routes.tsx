@@ -4,7 +4,9 @@ import { AuthLayout } from "layout/AuthLayout";
 import { ROUTES } from "constants/routes";
 import { lazy } from "react";
 
+const Commission = lazy(() => import("pages/Commission"));
 const Dashboard = lazy(() => import("pages/Dashboard"));
+const Products = lazy(() => import("pages/Products"));
 const Lessons = lazy(() => import("pages/Lessons"));
 
 // Auth
@@ -16,6 +18,8 @@ const AppRoutes = () => (
     <Route element={<DashboardLayout />}>
       <Route index element={<Dashboard />} />
       <Route path={ROUTES.LESSONS} element={<Lessons />} />
+      <Route path={ROUTES.PRODUCTS} element={<Products />} />
+      <Route path={ROUTES.COMMISSION} element={<Commission />} />
     </Route>
 
     <Route element={<AuthLayout />}>

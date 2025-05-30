@@ -1,18 +1,16 @@
 import { Header, Sidebar } from "./components";
-import { Suspense, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Spinner } from "components/UI";
+import { Suspense } from "react";
 
 const DashboardLayout: React.FC = () => {
-  const [collapsed, setCollapsed] = useState(false);
-
   return (
-    <div className="flex min-h-screen bg-gray-100">
-      <Sidebar collapsed={collapsed} />
+    <div className="flex min-h-screen">
+      <Sidebar />
 
-      <div className="flex flex-col flex-1">
-        <Header setCollapsed={setCollapsed} collapsed={collapsed} />
-        <main className="flex-1 p-6">
+      <div className="flex flex-col gap-10 flex-1 py-6 px-10">
+        <Header />
+        <main className="flex-1">
           <Suspense fallback={<Spinner />}>
             <Outlet />
           </Suspense>

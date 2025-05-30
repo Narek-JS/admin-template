@@ -1,4 +1,5 @@
-import { DashboardIcon, LessonsIcon } from "components/Icons";
+import { DashboardIcon, LessonsIcon, ProductsIcon } from "components/Icons";
+import { CommissionIcon } from "components/Icons/CommissionIcon";
 import { ROUTES } from "./routes";
 
 const MENU = [
@@ -11,6 +12,16 @@ const MENU = [
     key: ROUTES.LESSONS,
     icon: <LessonsIcon />,
     label: "sidebar:lessons",
+  },
+  {
+    key: ROUTES.PRODUCTS,
+    icon: <ProductsIcon />,
+    label: "sidebar:products",
+  },
+  {
+    key: ROUTES.COMMISSION,
+    icon: <CommissionIcon />,
+    label: "sidebar:commission",
   },
 ];
 

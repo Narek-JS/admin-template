@@ -1,7 +1,8 @@
 {
   "common": {
     "english": "Անգլերեն",
-    "logout": "Դուրս գալ"
+    "logout": "Դուրս գալ",
+    "addProduct": "Ավելացնել ապրանք"
   },
   "signup": {
     "title": "Մնում է միայն երկու քայլ։",
@@ -36,7 +37,17 @@
     "string_min_length": "Խնդրում ենք մուտքագրել առնվազն {{minLength}} նիշ։"
   },
   "sidebar": {
+    "commission": "Հանձնաժողով",
     "dashboard": "Վահանակ",
+    "products": "Ապրանքներ",
     "lessons": "Դասեր"
+  },
+
+  "products": {
+    "title": "Ապրանքներ",
+    "newProduct": "Ավելացնել ապրանք"
+  },
+  "commission": {
+    "title": "Հանձնաժողով"
   }
 }

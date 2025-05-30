@@ -1,25 +1,15 @@
-import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import { DashboardLanguageSwitcher } from "components/LanguageSwitcher";
-import type { Dispatch, SetStateAction } from "react";
 import { Notifications } from "components/Icons";
-import { Button, Layout, theme } from "antd";
+import { Input, Layout } from "antd";
 
-interface Props {
-  setCollapsed: Dispatch<SetStateAction<boolean>>;
-  collapsed: boolean;
-}
-
-const Header: React.FC<Props> = ({ setCollapsed, collapsed }) => {
-  const { token } = theme.useToken();
-
+const Header: React.FC = () => {
   return (
-    <Layout.Header style={{ padding: 0, background: token.colorBgContainer }}>
-      <div className="flex justify-between pr-[32px]">
-        <Button
-          icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-          className="!text-[16px] !w-[54px] !h-[54px]"
-          onClick={() => setCollapsed(!collapsed)}
-          type="text"
+    <Layout.Header>
+      <div className="flex justify-between items-center">
+        <Input.Search
+          placeholder="Search here..."
+          style={{ maxWidth: 450 }}
+          variant="filled"
         />
 
         <div className="flex items-center gap-8">

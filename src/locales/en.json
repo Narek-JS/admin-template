@@ -1,7 +1,8 @@
 {
   "common": {
     "english": "English",
-    "logout": "Logout"
+    "logout": "Logout",
+    "addProduct": "Add Product"
   },
   "signup": {
     "title": "Just Two Step Away!",
@@ -36,7 +37,17 @@
     "string_min_length": "Please enter at least {{minLength}} characters."
   },
   "sidebar": {
+    "commission": "Commission",
     "dashboard": "Dashboard",
+    "products": "Products",
     "lessons": "Lessons"
+  },
+
+  "products": {
+    "title": "Products",
+    "newProduct": "New Product"
+  },
+  "commission": {
+    "title": "Commission"
   }
 }
