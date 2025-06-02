@@ -1,5 +1,9 @@
-import { DashboardIcon, LessonsIcon, ProductsIcon } from "components/Icons";
-import { CommissionIcon } from "components/Icons/CommissionIcon";
+import {
+  CommissionIcon,
+  DashboardIcon,
+  ProductsIcon,
+  LessonsIcon,
+} from "components/Icons";
 import { ROUTES } from "./routes";
 
 const MENU = [
